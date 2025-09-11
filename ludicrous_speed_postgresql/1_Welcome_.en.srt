@@ -1,0 +1,204 @@
+﻿1
+00:00:00,000 --> 00:00:11,000
+Welcome to Ludicrous Speed Postgres. I greatly appreciate the opportunity to educate you on Postgres performance and I'm glad that you decided to invest in yourself.
+
+2
+00:00:11,000 --> 00:00:20,000
+I'm going to be presenting the framework, the perspective, and the knowledge that I use in my own projects and for the clients that I work with.
+
+3
+00:00:20,000 --> 00:00:28,000
+However, as you're going through the course, I encourage you to modify or change up how I do things if it works better for you.
+
+4
+00:00:28,000 --> 00:00:38,000
+My most important metric is you learning and applying the information presented in this course to make your Postgres databases as fast as possible.
+
+5
+00:00:38,000 --> 00:00:51,000
+Basically, I want this course to make you a Postgres Performance Master, a wizard if you will, but it's going to require some work on your part, so please be sure to dedicate time to the lessons each week.
+
+6
+00:00:51,000 --> 00:01:02,000
+However, if you happen to fall behind, don't worry. Everything is recorded, even the live Q&As will be recorded, and you have access to the course for the next two years.
+
+7
+00:01:02,000 --> 00:01:14,000
+Lastly, I do want you to keep in mind that this is an entirely new course, and even though I've spent a fair amount of time on it, I'm sure you're going to find some rough spots or some things that are confusing to you.
+
+8
+00:01:14,000 --> 00:01:24,000
+So, I really want to hear your feedback so that I can make adjustments and make the course the best it can be, because I want to give every student the biggest wins possible.
+
+9
+00:01:24,000 --> 00:01:29,000
+And with that, let's go over each of the modules of the course.
+
+10
+00:01:29,000 --> 00:01:33,000
+So, the first module is Performance Fundamentals.
+
+11
+00:01:33,000 --> 00:01:48,000
+So, when you're thinking about performance, it's important to start with the right mindset, and here we're going to be talking about the conceptual framework and the thought processes that I use when I go out consulting on Postgres.
+
+12
+00:01:48,000 --> 00:01:54,000
+So, I think these really are fundamentals that will help you throughout the rest of the course.
+
+13
+00:01:54,000 --> 00:01:58,000
+The next module is Exploring B-Tree Indexes.
+
+14
+00:01:58,000 --> 00:02:03,000
+We're going to learn different techniques to get the most out of B-Tree indexes.
+
+15
+00:02:03,000 --> 00:02:13,000
+So, we cover things like multi-column indexes, partial indexes, expression indexes, as well as things like index-only scans and covering indexes.
+
+16
+00:02:13,000 --> 00:02:19,000
+So, all the different ways you can use the standard index type in order to get the most performance.
+
+17
+00:02:19,000 --> 00:02:23,000
+The third module is Optimizing Indexes.
+
+18
+00:02:23,000 --> 00:02:30,000
+So, here we're going to be covering things like vacuum, analyze, and the importance of statistics.
+
+19
+00:02:30,000 --> 00:02:37,000
+We also cover things like the importance of re-indexing, as well as removing unused indexes.
+
+20
+00:02:37,000 --> 00:02:46,000
+For the fourth module, we're going to be covering optimized data and index types, because the right data can lead to better performance.
+
+21
+00:02:46,000 --> 00:02:53,000
+So, we talk about the use of UUIDs, Booleans, arrays, and range types.
+
+22
+00:02:53,000 --> 00:03:00,000
+We also go into other index types other than B-Tree indexes, such as GIN, GIST, BRIN, and Hash.
+
+23
+00:03:00,000 --> 00:03:04,000
+The fifth module covers Text and JSONB Search.
+
+24
+00:03:04,000 --> 00:03:13,000
+So, large amounts of text and JSONB data can be challenging to store in the database, and we explore different ways that you can search through that data,
+
+25
+00:03:13,000 --> 00:03:23,000
+talking about full text search and fuzzy search, as well as different ways to target JSONB and which index types to use.
+
+26
+00:03:23,000 --> 00:03:27,000
+The sixth module, we're going to be covering advanced querying techniques.
+
+27
+00:03:27,000 --> 00:03:39,000
+These are things that you can use on occasion to get more performance, things like lateral joins, distinct on, CTEs, and even things like keyset pagination.
+
+28
+00:03:39,000 --> 00:03:43,000
+For module seven, we're going to be covering handling excessive data changes.
+
+29
+00:03:43,000 --> 00:03:47,000
+So, excessive data changing can really tank your performance.
+
+30
+00:03:47,000 --> 00:03:56,000
+So, we discuss how to handle large insert workloads or large update workloads, or even just how to do bulk loading.
+
+31
+00:03:56,000 --> 00:04:00,000
+And then the eighth module, we cover partitioning, aggregates, and beyond.
+
+32
+00:04:00,000 --> 00:04:09,000
+So, basically, eventually you're going to need to use different types of data handling solutions to handle your data, such as partitioning,
+
+33
+00:04:09,000 --> 00:04:18,000
+or maybe you need to use materialized views, or do summary tables or aggregate tables to give yourself the best performance out of Postgres.
+
+34
+00:04:18,000 --> 00:04:22,000
+So, that's basically the content in all eight modules.
+
+35
+00:04:22,000 --> 00:04:27,000
+So, I wanted to give you three pieces of guidance as you go through the course.
+
+36
+00:04:27,000 --> 00:04:31,000
+So, number one is complete each module and lesson.
+
+37
+00:04:31,000 --> 00:04:43,000
+Sometimes one lesson builds upon another, and particularly the performance fundamentals in the first module are going to be discussed at different points in every other module.
+
+38
+00:04:43,000 --> 00:04:46,000
+Number two is participate in the community.
+
+39
+00:04:46,000 --> 00:04:51,000
+So, the community is where different announcements are going to be made about the course.
+
+40
+00:04:51,000 --> 00:05:02,000
+For example, if maybe a time change needs to happen, it's also a place where you can give feedback about the course, or it's a place to ask for help or even converse with your fellow students.
+
+41
+00:05:02,000 --> 00:05:05,000
+And the third is to participate in the Q&As.
+
+42
+00:05:05,000 --> 00:05:15,000
+So, even if you don't have a particular question, even if you attend them, you can hear what other students are asking, and it's a great way to increase your knowledge in general,
+
+43
+00:05:15,000 --> 00:05:19,000
+because I actually don't know what questions may come up during the Q&As.
+
+44
+00:05:19,000 --> 00:05:24,000
+They may bring up questions that are outside of the course or something that they're working on themselves.
+
+45
+00:05:24,000 --> 00:05:30,000
+But those are my three areas of guidance I think you should focus on for the course.
+
+46
+00:05:30,000 --> 00:05:33,000
+Okay, now for some logistics.
+
+47
+00:05:33,000 --> 00:05:37,000
+Basically, these eight modules will be delivered over eight weeks.
+
+48
+00:05:37,000 --> 00:05:44,000
+Now, in terms of access to the community, a link will appear in this welcome lesson once it's ready.
+
+49
+00:05:44,000 --> 00:05:54,000
+And if you have any logistical problems working with the course or going through the lessons or things of that nature, you can contact support@rubytreesoftware.com.
+
+50
+00:05:54,000 --> 00:06:00,000
+And as I said, I definitely want this course to make you a Postgres Performance Master.
+
+51
+00:06:00,000 --> 00:06:10,000
+I know you may fall behind periodically, but I encourage you to try to get yourself caught up if you can, and reach out for assistance if you're stuck on something.
+
