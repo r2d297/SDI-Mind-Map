@@ -311,6 +311,7 @@ to be leveraging those value semantic. You just can't make a copy of it anymore,
 that I wish more developers did, is I create this artificial code block. And you could see that by using the artificial code block, we kind of visualize the room of code in the code itself. We can visualize that room that I drew on the board. So now what we see is the code between lines 34 and 45.
 我希望更多开发者也这么做，就是我创建这个人为的代码块。你可以看到，通过使用这个人为代码块，我们在代码本身中把我在白板上画的“房间”可视化了。所以现在我们看到的是第 34 到 45 行之间的代码。
 
+![alt text](assets/image6.png)
 
 00:17:05
 
