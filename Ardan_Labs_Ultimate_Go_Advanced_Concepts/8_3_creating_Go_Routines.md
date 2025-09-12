@@ -96,7 +96,7 @@ and then it decrements that wait group, and then on line 42, we're holding to a 
 然后它会将该 wait group 递减，然后在第 42 行，我们调用了 wait。wait 会做的事情是阻止主 goroutine 导致程序终止。基本上当 main 函数返回时，程序会终止，而且会以极端的方式终止。
 
 
-![alt text](img/image2.png)
+![alt text](assets/image2.png)
 
 00:05:21
 

@@ -11,7 +11,7 @@ Transcript  转录本
 but here's the real problem with multi-threaded software. You've got to manage and control all those different paths of execution that you're about to set forth in the while. And the real problem is data races. Now a data race occurs when you have at least two Goroutines
 但多线程软件的真正问题在这里。你必须管理和控制所有那些不同的执行路径，这些路径将在一段时间内被启动。真正的问题是数据竞争（data race）。现在，数据竞争发生在你至少有两个 Goroutines
 
-![alt text](imgimage3.png)
+![alt text](img/image3.png)
 
 00:00:40
 
@@ -206,6 +206,10 @@ So let's just comment all this code out for a second, there it is. And rememberi
 所以我们先把这些代码全部注释掉，像这样。记住我们的共享状态就是这个 counter 变量，我们可以在这里写 atomic。现在看看我们从 atomic 指令获得的这个 API。
 
 
+![alt text](img/image4.png)
+
+
+
 00:11:20
 
 We have the ability to do adds atomically, which is what we need right now. You have the ability to do a compare and swap, all atomically. Compare the value in the shared state with something else. If it's true, then swap that out. We have the ability to do loads, which are reads, and stores, which are writes. And then just basic swaps regardless of the condition. Very common atomic API.
@@ -216,7 +220,7 @@ We have the ability to do adds atomically, which is what we need right now. You 
 
 So what we're gonna do is the add 32. Now notice how this API requires you to be very precise about the precision. So if I take the address of count and pass it in and say, one, I am gonna get a compiler error, because count right now is not a precision based integer.
 所以我们要做的是执行 add 32。现在注意这个 API 要求你对精度非常明确。因此如果我对 count 取地址并传入，然后写 1，会得到编译错误，因为 count 现在不是基于特定精度的整数。
-
+![alt text](assets/image5.png)
 
 00:12:01
 
