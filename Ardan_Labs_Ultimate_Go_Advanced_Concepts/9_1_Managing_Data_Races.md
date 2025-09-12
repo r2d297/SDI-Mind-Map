@@ -11,7 +11,7 @@ Transcript  转录本
 but here's the real problem with multi-threaded software. You've got to manage and control all those different paths of execution that you're about to set forth in the while. And the real problem is data races. Now a data race occurs when you have at least two Goroutines
 但多线程软件的真正问题在这里。你必须管理和控制所有那些不同的执行路径，这些路径将在一段时间内被启动。真正的问题是数据竞争（data race）。现在，数据竞争发生在你至少有两个 Goroutines
 
-![alt text](img/image3.png)
+![alt text](assets/image3.png)
 
 00:00:40
 
@@ -132,7 +132,7 @@ You could see, you could see now where that data race came in. These context swi
 So what we need to do is have each Goroutine, take a turn. So these three operations are atomic. They were atomic before we put the print statement in. But now that we've added the print statement, we're seeing that it's not running atomically. Technically, they really weren't an atomic set of instructions.
 所以我们需要让每个 Goroutine 轮流执行。这样这三个操作就是原子的。在我们加入打印语句之前它们是原子的。但现在我们加入了打印语句，就看到它们不再以原子方式运行。从技术上讲，它们并不是真正的一组原子指令。
 
-![alt text](img/image1.png)
+![alt text](assets/image1.png)
 
 00:07:21
 
@@ -206,7 +206,7 @@ So let's just comment all this code out for a second, there it is. And rememberi
 所以我们先把这些代码全部注释掉，像这样。记住我们的共享状态就是这个 counter 变量，我们可以在这里写 atomic。现在看看我们从 atomic 指令获得的这个 API。
 
 
-![alt text](img/image4.png)
+![alt text](assets/image4.png)
 
 
 
