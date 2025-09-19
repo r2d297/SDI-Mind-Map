@@ -1,11 +1,7 @@
-![alt text](image-8.png)
+![alt text](image-12.png)
 
+![alt text](image-10.png)
 
-![
-    
-
-    
-](image-9.png)
 00:00:00,599 --> 00:00:04,319
 welcome to part two of the lecture on synchronization this part we'll be
 欢迎来到同步讲座的第二部分，本部分我们将
