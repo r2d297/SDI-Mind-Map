@@ -1,4 +1,19 @@
--: In the last section, -: 在上一节中，
+- What is a Container in Docker ?
+  - Is a instance of an Image to runs a program.
+    - It's a program with his own isolated set of hardware resources, it has own set of memory, it has own space of networking technology, it has own spcae of hard-drive.
+![alt text](image-8.png)
+
+- Manipulating containers with the docker client
+  
+    1.   docker run detail
+   ![alt text](image-6.png)
+
+eg: `docerk run hello-world`
+
+- 002. overriding default commands
+  ![alt text](image-7.png)
+
+-: In the last section, -: 在上一节中， 
 
 we downloaded and installed Docker for Windows 我们已在个人电脑上下载并安装了 Docker for Windows
 
